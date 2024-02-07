@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.logo {
+    width: 15%; 
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+input:hover {
+    border-radius: 7px;
+}
+ 
+#calculation {
+    margin-top: 20px;
+}
+
+#generals {
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: auto;
+    width: 95%;
+    padding: 5px;
+}
+#basics {
+    background-color: grey;
+    max-width: max-content;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: 10px;
+    width: 95%;
+    padding: 5px;
+}
+
+#services {
+    background-color: grey;
+    border-radius: 10px;
+    padding-top: -100px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: 10px;
+    width: 95%;
+    padding: 5px;
+}
+
+.warning {
+    background-color: rgb(232, 196, 14); 
+    opacity: 100%;
+    padding: 4px;
+    margin: 8px;
+    border-radius: 10px;
+    font: 13px;
+    max-width: max-content;
+}
+.quote-container {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: auto;
+    width: 95%;
+    padding: 5px;
+}
+.sub-form {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px;
+    margin-top: 10px;
+}
+
+#garage-tooltip {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#subtotal {
+    background-color: #4BD97B;
+    max-width: max-content;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.loading-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 230px;
+}
+
+.loading-icon {
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#total-container {
+    display: flex;
+    align-items: center;
+}
+
+#total {
+    display: none;
+}
+
+#my-maps-container {
+    background-color: #4BD97B;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 95%;
+}
+
+#my-maps {
+    border: none;
+    border-radius: 5px;
+}
+
+.form-desc {
+    width: 150px; 
+    height: auto;
+}
+
+.tooltip {
+    width: 20px; 
+    height: auto;
+}
+/*Company Colors
+#4BD97B Green 
+#0E046E Dark Blue
