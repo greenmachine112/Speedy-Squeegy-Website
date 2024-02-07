@@ -173,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
     hideGutterElements();
 });
 
+//Format EmailJS variables for template 
 function sendMail(runningTotal) {
     var params = {
         to_name: document.getElementById("to_name").value,
@@ -187,10 +188,11 @@ function sendMail(runningTotal) {
     const serviceID = "quote-email";
     const templateID = "quote-template1";
 
+    //Send Email to user specified address
     emailjs.send(serviceID, templateID, params)
         .then(
             res => {
-                // Reset form values or perform any other necessary actions
+                // Reset form values or perform and display confirmation message
                 document.getElementById("to_name").value = "";
                 document.getElementById("email").value = "";
                 document.getElementById("large_pane").value = "";
@@ -205,4 +207,4 @@ function sendMail(runningTotal) {
         .catch(err => console.log(err))
 }
 
-//Built by Jake Green//
+// Built by Jake Green
