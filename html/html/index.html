@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speedy Squeegy | Window Cleaning </title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
     <!--Functional Javascript Start-->
-    <script src="index.js" type="text/javascript"></script>
+    <script src="../js/index.js" type="text/javascript"></script>
     <!--Functional Javascript End-->
     
     <!-- Calendly Widget Embed Start-->
@@ -42,7 +42,7 @@
     <header>
         <div class="topnav" id="nav-container">
             <a href="#nav-container">
-                <img class="logo" src="logo.png" alt="Your Logo">
+                <img class="logo" src="../assets/logo.png" alt="Your Logo">
             </a>
             <!--Calendly Hyperlink Embed End-->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -99,37 +99,37 @@
                         </div>
                     </div>
                     <div class="tooltip-container"> 
-                        <p><img class="tooltip" src="tooltip-icon.png">All of our cleaning products are Green Seal Certified. <a href="https://greenseal.org/about/faq/" target="blank">Learn more</a></p>
+                        <p><img class="tooltip" src="../assets/tooltip-icon.png">All of our cleaning products are Green Seal Certified. <a href="https://greenseal.org/about/faq/" target="blank">Learn more</a></p>
                     </div>
                     <p id="portion2">Calculator</p>
                     <div class="estimator"> 
                         <div class="quote-container" id="window-quote-container">
                             <h1>Windows, Frames, and Sills</h1>
-                            <p class="warning"><img class="tooltip" src="tooltip-icon.png">Please tally the overall count of glass panes,
+                            <p class="warning"><img class="tooltip" src="../assets/tooltip-icon.png">Please tally the overall count of glass panes,
                             not the total count of windows. A pane refers to an individual piece of glass 
                             encased within a frame.</p>
                             
                             <div class="sub-form">
-                                <img class="form-desc" src="large-pane.png">
+                                <img class="form-desc" src="../assets/large-pane.png">
                                 <label for="large_pane">Large Panes:</label>
                                 <input type="number" id="large_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                             </div>
                             
                             <div class="sub-form">
-                                <img class="form-desc" src="small-pane.png">
+                                <img class="form-desc" src="../assets/small-pane.png">
                                 <label for="small_pane">Small Panes:</label>
                                 <input type="number" id="small_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
-                                <p class="warning" id="garage-tooltip"><img class="tooltip" src="tooltip-icon.png">Include garage windows, if applicable</p>
+                                <p class="warning" id="garage-tooltip"><img class="tooltip" src="../assets/tooltip-icon.png">Include garage windows, if applicable</p>
                             </div>
                             
                             <div class="sub-form">
-                                <img class="form-desc" src="frame.png">
+                                <img class="form-desc" src="../assets/frame.png">
                                 <label for="frames">Frames</label>
                                 <input type="number" id="frames" class="quantity-field" step="1" value="0" oninput=" validateInput(this)">
                             </div>
 
                             <div class="sub-form"></span>
-                                <img class="form-desc" src="sill.png">
+                                <img class="form-desc" src="../assets/sill.png">
                                 <label for="sills">Sills:</label>
                                 <input type="number" id="sills" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                             </div>
@@ -137,7 +137,7 @@
                         <div class="quote-container" id="gutter-quote-container">
                             <h1>Gutter Cleaning</h1>
                             <div class="sub-form">
-                                <img class="form-desc" src="gutter.png">
+                                <img class="form-desc" src="../assets/gutter.png">
                                 <label for="guttering">Total Feet of Guttering</label>
                                 <input type="number" id="guttering" class="quantity-field" step="1" value="0" oninput=" validateInput(this)">
                                 <label for="downspout">Would you like us to flush your downspout?</label>
@@ -148,11 +148,11 @@
                         <div id="total-container">
                             <p>Your Quote: $<span id="total">0</span></p>
                             <div id="loading-container" class="loading-container">
-                                <img src="squeegee.png" alt="Loading Icon" class="loading-icon">
+                                <img src="../assets/squeegee.png" alt="Loading Icon" class="loading-icon">
                             </div>
                         </div>
                         <div>
-                            <p><img class="tooltip" src="tooltip-icon.png">We include a free door cleaning in all of our jobs.</p>
+                            <p><img class="tooltip" src="../assets/tooltip-icon.png">We include a free door cleaning in all of our jobs.</p>
                         </div>
                     </div>
                 </form>
