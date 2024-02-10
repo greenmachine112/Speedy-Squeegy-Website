@@ -1,0 +1,495 @@
+/*Company Colors
+#4BD97B Green 
+#0E046E Dark Blue*/
+
+html {
+    scroll-behavior: smooth; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-inline: 15px;
+    margin-block: 10px;
+    font-size: 30px;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 10px;
+    margin-block: .8em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    border-radius: 6px;
+ }
+header, footer {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/*Global highlight color*/
+::selection {
+    background-color: #4BD97B; 
+    color: #000; 
+  }
+
+.construction-banner {
+    background-color: #eed202;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.construction-text {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.quote-text {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.motto-container {
+    background-color: #0E046E; 
+    margin: 0 auto; 
+    text-align: center; 
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.motto-header {
+    font-size: 56px;
+    color: white;
+}
+
+.motto-subtext {
+    color: white; 
+    margin-top: 20px;
+}
+
+.get-quote-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.get-quote {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px #999;
+    background-color:#4BD97B;
+    border: 1px solid #0E046E;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 90%;
+    height: 40%;
+}
+
+button:active {
+    background-color: #4BD97B;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px)
+}
+
+.site-header { 
+    padding:0;
+    background-color: #4BD97B;
+    width: 100%;
+}
+
+.site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.site-identity {
+    float: center;
+    background-color: #4BD97B;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.site-navigation {
+    background-color: #4BD97B;
+    margin-top: 0 auto;
+}
+
+.site-navigation ul, li {
+    margin-top: 0px; 
+    padding: 0;
+    background-color: #4BD97B;
+    display: flex;
+    justify-content: center;
+}
+  
+.site-navigation li {
+    margin-right: 10px;
+    margin-bottom: -5px;
+    background-color: #4BD97B;
+}
+
+#left-flex {
+    justify-content: left;
+    max-width: max-content;
+}
+
+.form-desc {
+    max-width: 100%; 
+    height: auto;
+}
+
+.quantity-field {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+}
+
+.logo {
+    width: 10rem; 
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+input {
+    border-radius: 4px;
+}
+input:hover {
+    border-radius: 6px;
+}
+ 
+#calculation {
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.break {
+    background-color: #0E046E; 
+    color: white;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+#page-break {
+    width: 100%; 
+    height: 17px; 
+    background-color: #0E046E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    flex: 1 1 0px; 
+    min-width: 250px; 
+    max-width: 350px;
+    background-color: white;
+    border: 1px solid #0E046E;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#generals {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin-left: 15px; 
+    margin-right: 15px;
+    margin-top: 20px;
+    padding: 5px;
+    position: relative;
+}
+
+#basics {
+    max-width: max-content;
+}
+
+#basics-flex-container {
+    margin-top: -20px;
+}
+
+#services {
+    max-width: max-content;
+}
+
+#services-flex-container {
+    margin-top: 5px;
+}
+
+#service-ad-container {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#service-ad {
+    width: 55%; 
+    position: absolute; 
+    top: 13px; 
+    right: 10px;
+    max-height: 95%;
+    min-height: 95%;
+}
+
+@media only screen and (max-width: 780px) {
+    #service-ad {
+      display: none;
+    }
+}
+
+.warning {
+    background-color: rgb(232, 196, 14); 
+    padding: 4px;
+    margin: 8px;
+    border-radius: 10px;
+    font: 13px;
+    max-width: max-content;
+}
+
+.assistance {
+    background-color:lightgray;
+    padding: 4px;
+    margin: 8px;
+    border-radius: 10px;
+    font: 13px;
+    max-width: max-content;
+
+}
+
+.unsure-amount {
+    margin-top: 15px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lightbox.show {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #0E046E;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.open-lightbox {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hl:active {
+    color: blue;
+}
+
+.quote-container {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding-top: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.sub-form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#garage-tooltip {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#subtotal {
+    font-size: 15px;
+    margin-inline: auto;
+    padding: 8px;
+    border-radius: 5px;
+
+    /*display: none; toggle to display value to user*/
+}
+
+.loading-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 800px;
+}
+
+.loading-icon {
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#total-container {
+    display: flex;
+    align-items: center;
+}
+
+#total {
+    display: none;
+}
+
+#my-maps-container {
+    background-color: #4BD97B;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 95%;
+}
+
+#my-maps {
+    border: none;
+    border-radius: 5px;
+}
+
+.form-desc {
+    width: 150px; 
+    height: auto;
+}
+
+.tooltip {
+    width: 20px; 
+    height: auto;
+}
+
+#footer-container {
+    background-color: #4BD97B;
+    padding: 5px;
+    margin: -5px;
+    position: relative;
+}
+
+#footer-logo {
+    margin: 20px;
+    width: 18rem;
+}
+
+#footer-links-container {
+    max-width: max-content;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+    max-width: 120px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+#footer-number {
+    position: absolute; 
+    bottom: 50px;
+    right: 24%;
+    width: 50%;
+}
+
+#footer-graphic-logo {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    footer {
+      text-align: left;
+    }
+  
+    #footer-container {
+      flex-direction: column; 
+    }
+
+    #footer-number {
+        width: 60%;
+        position: absolute; 
+        margin: 15px;
+        top: 145px;
+        right: 10px;
+    }
+
+    #footer-graphic-logo {
+        width: 125px;
+        position: absolute; 
+        top: 20px;
+        right: 20px;
+        display: inline;
+    }
+  }
+
+#copy-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
