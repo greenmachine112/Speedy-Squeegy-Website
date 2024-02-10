@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Squeegy | Window Cleaning </title>
+    <link href="../styles/styles.css" rel="stylesheet">
+    <!--Functional Javascript Start-->
+    <script src="../js/index.js" type="text/javascript"></script>
+    <!--Functional Javascript End-->
+    
+    <!-- Calendly Widget Embed Start-->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/speedysqueegyllc/window-cleaning?hide_gdpr_banner=1', text: 'Book Now', color: '#4BD97B', textColor: 'white', branding: undefined }); }</script>
+    <!-- Calendly Widget Embed End-->
+
+    <!--Google Analytics Tag Start-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FKRJYR2D8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1FKRJYR2D8');
+    </script> 
+    <!--Google Analytics Tag End-->
+
+    <!--Email Automation Script Start-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "9wB6Xv--VzRLs2xOr",
+    });
+    })();
+    </script>
+    <!--Email Automation Script End-->
+</head>
+<body>
+        <div class="construction-banner">
+            <div class="construction-text">SITE IS UNDER CONSTRUCTION. SOME FUNCTIONALITIES MAY NOT WORK.</div>
+            <div class="quote-text">Please bear with us, as some functions are rudamentary. We're working to implement a more fluid experience.</div>
+            <div class="quote-text">You are, however, able to get a quote and schedule a cleaning from this page. Get <b>45% off</b> if you book your <b>window cleaning</b> in advance! No deposit required. <a href="#portion1" class="hl">Get your quote now!</a></div>
+        </div> 
+        <header class="site-header">
+            <div class="site-identity">
+                <a href="#header-logo"><img class="logo" id="header-logo" src="../assets/logo.png" alt="Your Logo"></a>
+            </div>  
+        <nav class="site-navigation" id="nav-container">
+            <ul class="nav">
+                <li><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a class="hl" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/speedysqueegyllc/window-cleaning'});return false;">Schedule Now</a>
+                <li><a class="hl" href="#footer-number">Contact</a></li> 
+                <li><a class="hl" href="#">Gallery</a></li> 
+                <li><a class="hl" href="#">About Us</a></li> 
+                <li><a class="hl" href="#">Your Team</a></li> 
+                <li><a class="hl" href="#">Testimonials</a></li> 
+            </ul>
+        </nav>
+        </header>    
+    </section>
+    <section> 
+        <div class="motto-container"> 
+            <div class="motto-header">The <b>fastest</b> cleaning company in Sacramento.</div>   
+            <div class="motto-subtext">This estimator gives you access to the same pricing model we use in person. Get a quote for your home in less than 1 minute. Just add the windows, frames, and sills! If you prefer to meet face-to-face with a technician for your quote, give us a call. We're here to assist you.
+            </div>
+        </div>
+        <div class="get-quote-container">
+            <button class="get-quote" onclick="scrollToElement('portion1')">Start your quote</button>
+        </div>
+        <div class="estimator-elems">
+            <p id="portion1" class="break">General</p>
+            <div class="estimator"> 
+                <form action="NULL" method="post" id="quote-form">
+                    <div id="generals">
+                        <h1>Your Information</h1>
+                            <div id="basics">
+                                <div class="flex-container" id="basics-flex-container">
+                                    <div class="flex-item center-items">
+                                        <div class="sub-form">
+                                            <label for="to_name">Name:</label>
+                                            <input type="text" id="to_name" name="to_name" required>
+                  
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" required>
+                  
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" required>
+
+                                            <label for="address">Address:</label>
+                                            <input type="address" id="address" name="address" required>
+                                        </div>  
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div id="services">
+                                <div class="flex-container" id="services-flex-container">
+                                    <div class="flex-item center-items">
+                                        <div class="sub-form" id="services-sub-form">
+                                            <p>Which services does your home need?</p>
+                                            <label for="window-checkbox">Window Cleaning</label>
+                                            <input type="checkbox" id="window-checkbox" name="windows">
+                            
+                                        <!--Add checkbox form for interior and exterior windows-->
+                
+                                            <label for="gutter-checkbox">Gutter Cleaning</label>
+                                            <input type="checkbox" id="gutter-checkbox" name="gutters">
+                                        </div>  
+                                    </div>                   
+                                </div>
+                            </div>
+                        <img id="service-ad" src="../assets/placeholder.png" alt="Placeholder Image">
+                    </div>
+                    <div class="tooltip-container"> 
+                        <p><img class="tooltip" src="../assets/tooltip-icon.png">All of our cleaning products are Green Seal Certified. <a class="hl" href="https://greenseal.org/about/faq/" target="blank">Learn more</a></p>
+                    </div>
+                    <div class="break">Calculator</div>
+                    <div class="estimator"> 
+                        <div class="quote-container" id="window-quote-container">
+                            <h1>Windows, Frames, and Sills</h1>
+                            <p class="warning"><img class="tooltip" src="../assets/tooltip-icon.png">Please tally the overall count of glass panes,
+                            not the total count of windows. A pane refers to an individual piece of glass 
+                            encased within a frame.</p>
+                            
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div class="sub-form">
+                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <label for="large_pane">Large Panes:</label>
+                                        <input type="number" id="large_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <div class="assistance">
+                                            <img class="tooltip" src="../assets/tooltip-icon.png">Glass panes over 4ft in height. i.e. Sliding glass doors.
+                                            <span class="hl unsure-amount open-lightbox">Not sure how many?</span>
+                                            <div class="lightbox frames-lightbox">
+                                                <div class="lightbox-content">
+                                                    <span class="close-btn">&times;</span>
+                                                    <h2>Give us your best guess</h2>
+                                                    <p>We'll verify it before the job.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div class="sub-form">
+                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <label for="small_pane">Small Panes:</label>
+                                        <input type="number" id="small_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <div class="assistance">
+                                            <img class="tooltip" src="../assets/tooltip-icon.png">i.e. Standard windows, french panes.
+                                            <span class="hl unsure-amount open-lightbox">Not sure how many?</span>
+                                            <div class="lightbox frames-lightbox">
+                                                <div class="lightbox-content">
+                                                    <span class="close-btn">&times;</span>
+                                                    <h2>Give us your best guess</h2>
+                                                    <p>We'll verify it before the job.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div class="sub-form">
+                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <label for="frames">&nbsp;&nbsp;&nbsp;Frames:&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="number" id="frames" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <div class="lightbox frames-lightbox">
+                                            <div class="lightbox-content">
+                                                <span class="close-btn">&times;</span>
+                                                <h2>Give us your best guess</h2>
+                                                <p>We'll verify it before the job.</p>
+                                            </div>
+                                        </div>
+                                        <span class="hl unsure-amount open-lightbox">Not sure how many?</span>                                        
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div class="sub-form">
+                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <label for="sills">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sills:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="number" id="sills" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <div class="lightbox sills-lightbox">
+                                            <div class="lightbox-content">
+                                                <span class="close-btn">&times;</span>
+                                                <h2>Give us your best guess</h2>
+                                                <p>Each window typically has one sill.</p> 
+                                                <p>We'll verify it before the job.</p>
+                                            </div>
+                                        </div>             
+                                        <span class="hl unsure-amount open-lightbox">Not sure how many?</span>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-container" id="gutter-quote-container">
+                            <h1>Gutter Cleaning</h1>
+                            <p class="warning" id="gutter-cleaning-warning"><img class="tooltip" src="../assets/tooltip-icon.png">Due to high demand, gutter cleaning resources are limited. Please book at least one week in advance.</p>
+                            <div class="flex-container" id="left-flex">
+                                <div class="flex-item">
+                                    <div class="sub-form">
+                                        <img class="form-desc" src="../assets/placeholder.png">
+                                        <label for="guttering">Total Feet of Guttering</label>
+                                        <input type="number" id="guttering" class="quantity-field" step="1" value="0" oninput=" validateInput(this)">
+                                        <label for="downspout">Would you like us to flush your downspout?</label>
+                                        <input type="checkbox" id="downspout" onclick="calculateTotal()">                            
+                                    </div>  
+                                </div>                   
+                            </div>
+                        </div>
+                        <div id="page-break"></div>
+                        <div class="get-quote-container">
+                            <button class="get-quote" id="calculation" type="button" onclick="getQuote()">Get Quote</button>
+                        </div>
+                        <div id="total-container">
+                            <p id="subtotal">Your Quote: $<span id="total">0</span></p>
+                            <div id="loading-container" class="loading-container">
+                                <img src="../assets/squeegee.png" alt="Loading Icon" class="loading-icon">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!--Google MyMaps Embed Start-->
+    <div id="my-maps-container">
+        <iframe id="my-maps" src="https://www.google.com/maps/d/u/3/embed?mid=129ruAYJwC8FKovACWTrReUPi5EdtggM&ehbc=2E312F" width="100%" height="300"></iframe>
+    </div>
+<!-- Google MyMaps Embed End -->
+</body>
+<footer>
+    <div id="footer-container">
+        <img src="../assets/logo-wo-badge.png" alt="Company Logo" id="footer-logo">
+            <img src="../assets/logo.png" alt="Company Logo" id="footer-graphic-logo">
+        
+        <div id="footer-links-container">
+            <div class="footer-links">
+                <a>info@speedysqueegy.com</a>
+                <a href="tos.html" class="hl">Terms of Service</a>
+                <a>The Speedy Way</a>
+                <a>Feedback</a>
+            </div>
+        </div>
+        <div id="copy-container">
+            <span>Designed and Developed by Jake Green</span>
+        </div>
+        <img src="../assets/phone.png" alt="Phone Number" id="footer-number">
+    </div>
+</footer>
+</html>
+
+<!--If (window-checkbox == checked)
+    service1 = "5-in-1 Window Cleaning Package"
+    else service1= ""
+    
+    If (gutter-checkbox == checked) 
+        service2 = "Gutter Cleaning"
+    else 
+        service2 = "None"
+    If (downspout == checked) 
+        service3 = " & Downspout Flushing"
+    else
+        service3 = ""
+-->
+
+<!--Fix header and footer to reach full width of page-->
+<!--fix Start Quote button to center-->
+<!---->
