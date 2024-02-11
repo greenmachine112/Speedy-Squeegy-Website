@@ -372,6 +372,10 @@ input:hover {
     color: blue;
 }
 
+.hl-white {
+    color: white;
+}
+
 .quote-container {
     background-color: lightgrey;
     border-radius: 10px;
