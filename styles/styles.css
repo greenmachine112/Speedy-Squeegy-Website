@@ -10,10 +10,16 @@ html {
 }
 
 h1 {
-    margin-inline: 15px;
+    margin-inline: 10px;
     margin-block: 10px;
     font-size: 30px;
 }
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
 ::-webkit-scrollbar {
     width: 1em;
 }
@@ -28,10 +34,11 @@ h1 {
     background: darkgrey;
     border-radius: 6px;
  }
-header, footer {
-    margin-left: -10px;
-    margin-right: -10px;
-}
+
+ header, footer {
+    margin-inline: 0px;
+ }
+
 /*Global highlight color*/
 ::selection {
     background-color: #4BD97B; 
@@ -42,7 +49,7 @@ header, footer {
     background-color: #eed202;
     padding: 10px;
     text-align: center;
-    margin: 20px;
+    margin: 5px;
     border: 5px solid black;
 }
 
@@ -63,7 +70,7 @@ header, footer {
     margin-bottom: 20px;
     padding: 20px;
     max-width: 90%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .motto-header {
@@ -94,6 +101,7 @@ header, footer {
     cursor: pointer;
     width: 90%;
     height: 40%;
+    color: #0E046E;
 }
 
 button:active {
@@ -140,14 +148,19 @@ button:active {
     background-color: #4BD97B;
 }
 
-#left-flex {
-    justify-content: left;
-    max-width: max-content;
-}
-
 .form-desc {
     max-width: 100%; 
     height: auto;
+}
+
+#sill-img-container {
+   height: 162px;
+   position: relative;
+}
+
+#sill-img {
+    height: 160px;
+    width: 120%;
 }
 
 .quantity-field {
@@ -165,7 +178,9 @@ button:active {
 
 input {
     border-radius: 4px;
+    border: 2px solid grey;
 }
+
 input:hover {
     border-radius: 6px;
 }
@@ -193,7 +208,7 @@ input:hover {
 
 #page-break {
     width: 100%; 
-    height: 17px; 
+    height: 20px; 
     background-color: #0E046E;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -203,7 +218,7 @@ input:hover {
     flex: 1 1 0px; 
     min-width: 250px; 
     max-width: 350px;
-    background-color: white;
+    background-color: WHITE;
     border: 1px solid #0E046E;
     border-radius: 5px;
     text-align: center;
@@ -219,24 +234,36 @@ input:hover {
     margin-left: 15px; 
     margin-right: 15px;
     margin-top: 20px;
-    padding: 5px;
+    padding-inline: 5px;
     position: relative;
+}
+
+#your-info {
+    margin-left: 22px;
 }
 
 #basics {
     max-width: max-content;
+    margin-inline: 15px;
+}
+
+#basics-flex-item {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 3px;
 }
 
 #basics-flex-container {
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 #services {
     max-width: max-content;
+    margin-left: 6px;
 }
 
 #services-flex-container {
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 #service-ad-container {
@@ -258,12 +285,25 @@ input:hover {
     #service-ad {
       display: none;
     }
+
+    #generals {
+        padding-inline: 200px;
+    }
+
+    #your-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 9px;
+    }
 }
 
 .warning {
     background-color: rgb(232, 196, 14); 
     padding: 4px;
-    margin: 8px;
+    margin-block: 8px;
+    margin-inline: 5px;
     border-radius: 10px;
     font: 13px;
     max-width: max-content;
@@ -347,7 +387,7 @@ input:hover {
 }
 
 .sub-form {
-    background-color: white;
+    background-color: WHITEred;
     padding: 10px;
     border-radius: 5px;
     margin: 8px;
@@ -355,6 +395,12 @@ input:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sub-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -373,12 +419,24 @@ input:hover {
     /*display: none; toggle to display value to user*/
 }
 
+
+#total-container {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+#total {
+    display: none;
+}
+
 .loading-container {
     display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-left: 800px;
+    left: 90%;
+    top: 100;
 }
 
 .loading-icon {
@@ -390,15 +448,6 @@ input:hover {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-#total-container {
-    display: flex;
-    align-items: center;
-}
-
-#total {
-    display: none;
 }
 
 #my-maps-container {
@@ -483,7 +532,7 @@ input:hover {
         right: 20px;
         display: inline;
     }
-  }
+}
 
 #copy-container {
     display: flex; 

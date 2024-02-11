@@ -42,7 +42,7 @@
         <div class="construction-banner">
             <div class="construction-text">SITE IS UNDER CONSTRUCTION. SOME FUNCTIONALITIES MAY NOT WORK.</div>
             <div class="quote-text">Please bear with us, as some functions are rudamentary. We're working to implement a more fluid experience.</div>
-            <div class="quote-text">You are, however, able to get a quote and schedule a cleaning from this page. Get <b>45% off</b> if you book your <b>window cleaning</b> in advance! No deposit required. <a href="#portion1" class="hl">Get your quote now!</a></div>
+            <div class="quote-text">You are, however, able to get a quote and schedule a cleaning from this page. Get <b>45% off</b> if you book your <b>window cleaning in advance!</b> No deposit required. <a href="#portion1" class="hl">Get your quote now!</a></div>
         </div> 
         <header class="site-header">
             <div class="site-identity">
@@ -65,7 +65,8 @@
     <section> 
         <div class="motto-container"> 
             <div class="motto-header">The <b>fastest</b> cleaning company in Sacramento.</div>   
-            <div class="motto-subtext">This estimator gives you access to the same pricing model we use in person. Get a quote for your home in less than 1 minute. Just add the windows, frames, and sills! If you prefer to meet face-to-face with a technician for your quote, give us a call. We're here to assist you.
+            <div class="motto-subtext">This estimator gives you access to the same pricing model we use in person. Get a quote for your home in less than 1 minute. Just add the windows, frames, and sills! 
+                <p>If you prefer to meet face-to-face with a technician for your quote, <a href="#footer-number" class="hl"> give us a call</a>. We're here to assist you.</p>
             </div>
         </div>
         <div class="get-quote-container">
@@ -76,10 +77,10 @@
             <div class="estimator"> 
                 <form action="NULL" method="post" id="quote-form">
                     <div id="generals">
-                        <h1>Your Information</h1>
                             <div id="basics">
+                                <h1 id="your-info">Your Information</h1>
                                 <div class="flex-container" id="basics-flex-container">
-                                    <div class="flex-item center-items">
+                                    <div class="flex-item" id="basics-flex-item">
                                         <div class="sub-form">
                                             <label for="to_name">Name:</label>
                                             <input type="text" id="to_name" name="to_name" required>
@@ -98,8 +99,8 @@
                             </div>
                             <div id="services">
                                 <div class="flex-container" id="services-flex-container">
-                                    <div class="flex-item center-items">
-                                        <div class="sub-form" id="services-sub-form">
+                                    <div class="flex-item" id="services-flex-item">
+                                        <div class="sub-form">
                                             <p>Which services does your home need?</p>
                                             <label for="window-checkbox">Window Cleaning</label>
                                             <input type="checkbox" id="window-checkbox" name="windows">
@@ -128,7 +129,7 @@
                             <div class="flex-container">
                                 <div class="flex-item">
                                     <div class="sub-form">
-                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <img class="form-desc" src="../assets/large-pane.png" alt="Placeholder Image">
                                         <label for="large_pane">Large Panes:</label>
                                         <input type="number" id="large_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                                         <div class="assistance">
@@ -146,7 +147,7 @@
                                 </div>
                                 <div class="flex-item">
                                     <div class="sub-form">
-                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <img class="form-desc" src="../assets/small-pane.png" alt="Placeholder Image">
                                         <label for="small_pane">Small Panes:</label>
                                         <input type="number" id="small_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                                         <div class="assistance">
@@ -164,7 +165,7 @@
                                 </div>
                                 <div class="flex-item">
                                     <div class="sub-form">
-                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <img class="form-desc" src="../assets/frame.png" alt="Placeholder Image">
                                         <label for="frames">&nbsp;&nbsp;&nbsp;Frames:&nbsp;&nbsp;&nbsp;</label>
                                         <input type="number" id="frames" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                                         <div class="lightbox frames-lightbox">
@@ -179,7 +180,9 @@
                                 </div>
                                 <div class="flex-item">
                                     <div class="sub-form">
-                                        <img class="form-desc" src="../assets/placeholder.png" alt="Placeholder Image">
+                                        <span id="sill-img-container">
+                                            <img class="form-desc" id="sill-img" src="../assets/sill.png" alt="Placeholder Image">
+                                        </span> 
                                         <label for="sills">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sills:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                         <input type="number" id="sills" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
                                         <div class="lightbox sills-lightbox">
@@ -198,10 +201,10 @@
                         <div class="quote-container" id="gutter-quote-container">
                             <h1>Gutter Cleaning</h1>
                             <p class="warning" id="gutter-cleaning-warning"><img class="tooltip" src="../assets/tooltip-icon.png">Due to high demand, gutter cleaning resources are limited. Please book at least one week in advance.</p>
-                            <div class="flex-container" id="left-flex">
-                                <div class="flex-item">
+                            <div class="flex-container">
+                                <div class="flex-item" id="gutter-flex-item">
                                     <div class="sub-form">
-                                        <img class="form-desc" src="../assets/placeholder.png">
+                                        <img class="form-desc" src="../assets/gutter.png">
                                         <label for="guttering">Total Feet of Guttering</label>
                                         <input type="number" id="guttering" class="quantity-field" step="1" value="0" oninput=" validateInput(this)">
                                         <label for="downspout">Would you like us to flush your downspout?</label>
