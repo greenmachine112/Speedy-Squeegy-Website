@@ -11,8 +11,7 @@ html {
 
 #container {
     margin-top: -15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-inline: 10px;
     padding: 2px 20px 3px 0px;
     background-color: lightgrey;
     font-size: 15px;

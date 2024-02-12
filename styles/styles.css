@@ -39,6 +39,10 @@ body {
     margin-inline: 0px;
  }
 
+ .ul {
+    text-decoration: underline;
+ }
+
 /*Global highlight color*/
 ::selection {
     background-color: #4BD97B; 
@@ -54,7 +58,7 @@ body {
 }
 
 .construction-text {
-    font-size: 2rem;
+    font-size: 2vh;
     font-weight: 800;
 }
 
