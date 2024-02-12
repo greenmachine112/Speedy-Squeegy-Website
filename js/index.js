@@ -1,6 +1,21 @@
 // Function to scroll to the element with ID 'portion1'
-function scrollToElement() {
+function scrollToPortion1() {
     var element = document.getElementById('portion1');
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Function to scroll to the element with ID 'generals'
+function scrollToGenerals() {
+    var element = document.getElementById('portion2');
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function scrollToServices() {
+    var element = document.getElementById('services');
     if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -36,38 +51,55 @@ function hideGutterElements() {
 
 // Combined function triggered by the button click
 function getQuote() {
-    // Call calculateTotal function
     var runningTotal = calculateTotal();
-
-    // Show loading container and hide result
     var loadingContainer = document.getElementById('loading-container');
-    var totalElement = document.getElementById('total');
+    var inputs = [
+        { id: 'to_name', message: 'Please enter your name' },
+        { id: 'email', message: 'Please enter your email' },
+        { id: 'phone', message: 'Please enter your phone number' },
+        { id: 'address', message: 'We use your address to verify your quote' }
+    ];
 
     loadingContainer.style.display = 'flex';
-    totalElement.textContent = ' Calculating...';
-
-    // Simulate a 1.1-second delay for the calculation
     setTimeout(function () {
-        // Perform the actual calculation
         runningTotal = calculateTotal();
 
-        // Display message and scroll to the specified element if total is $0
+        for (var i = 0; i < inputs.length; i++) {
+            var input = document.getElementById(inputs[i].id);
+
+            if (input.value.trim() === "") {
+                displayErrorLightbox(inputs[i].message);
+                scrollToPortion1();
+                setTimeout(() => input.focus(), 500);
+
+                loadingContainer.style.display = 'none';
+                return;
+            }
+        }
+
         if (runningTotal === 0) {
-            alert("Oops, your quote is empty. Try again.");
-            scrollToPortion2(); // Call a function to scroll to the desired location
-            // Preselect the input field with id "large_pane" after a short delay
-            setTimeout(function () {
-                document.getElementById('large_pane').focus();
-            }, 500);
+            displayErrorLightbox("Oops, your quote is empty. Try again.");
+            scrollToGenerals();
+            setTimeout(() => document.getElementById('large-pane').focus(), 500);
+
+            loadingContainer.style.display = 'none';
+            return;
         } else {
-            // If total is not $0, call the sendMail function
+            // If total 
+            openLightbox()
             sendMail(runningTotal);
         }
 
-        // Hide the loading container after the delay and show the total amount
         loadingContainer.style.display = 'none';
-        totalElement.style.display = 'inline';
     }, 1100);
+}
+
+function displayErrorLightbox(message) {
+    var lightbox = document.getElementById('error-lightbox');
+    var errorMessageElement = lightbox.querySelector('.error-message');
+
+    errorMessageElement.textContent = message;
+    lightbox.classList.add('show');
 }
 
 // Function to validate input and ensure non-negativity
@@ -94,48 +126,7 @@ function calculateTotal() {
 
     document.getElementById('total').textContent = runningTotal;
 
-    return runningTotal; // Return the runningTotal value
-}
-
-// Function to handle form submission
-function submitForm() {
-    // Show loading container and hide result
-    var loadingContainer = document.getElementById('loading-container');
-    var totalElement = document.getElementById('total');
-
-    loadingContainer.style.display = 'flex';
-    totalElement.textContent = ' Calculating...';
-
-    // Simulate a 1.1-second delay for the calculation
-    setTimeout(function () {
-        // Perform the actual calculation
-        var runningTotal = calculateTotal(); // Store the runningTotal value
-
-        // Display message and scroll to the specified element if total is $0
-        if (runningTotal === 0) {
-            alert("Oops, please enter the number of windows, frames, and sills.");
-            scrollToPortion2(); // Call a function to scroll to the desired location
-            // Preselect the input field with id "large_pane" after a short delay
-            setTimeout(function () {
-                document.getElementById('large_pane').focus();
-            }, 500);
-        } else {
-            // If total is not $0, call the sendMail function
-            sendMail(runningTotal);
-        }
-
-        // Hide the loading container after the delay and show the total amount
-        loadingContainer.style.display = 'none';
-        totalElement.style.display = 'inline';
-    }, 1100);
-}
-
-// Function to scroll to the element with ID 'generals'
-function scrollToPortion2() {
-    var element = document.getElementById('portion2');
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
+    return runningTotal;
 }
 
 // Event listener for DOMContentLoaded
@@ -205,6 +196,93 @@ function sendMail(runningTotal) {
             })
 
         .catch(err => console.log(err))
+}
+
+function openLightbox() {
+    console.log('success')
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'block';
+
+    // Define the texts to be displayed
+    var texts = [
+        "Calculating",
+        "Applying discounts",
+        "Finalizing",
+        "Sending email",
+        "All set! Find your full quote breakdown in your email's inbox. Thank you for choosing Speedy Squeegy."
+    ];
+
+    // Display texts in sequence with a 1-second delay for each
+    displayTextsSequentially(texts, 0, lightbox);
+}
+
+function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+
+function displayTextsSequentially(texts, index, lightbox) {
+    var content = document.querySelector('.lightbox-content p');
+    var currentText = texts[index];
+    var periods = 0;
+
+    function animatePeriods() {
+        periods = (periods + 1) % 4;
+
+        // Check if the current text is the fifth element
+        if (index === 4) {
+            content.innerHTML = currentText;
+        } else {
+            var newText = currentText + '.'.repeat(periods);
+            content.innerHTML = newText;
+
+            // Reset the content after animation
+            if (periods === 0 && newText.length > currentText.length) {
+                setTimeout(function () {
+                    content.innerHTML = currentText;
+                }, 100);
+            }
+        }
+    }
+
+    // Initial display without periods
+    content.innerHTML = currentText;
+
+    // Animate periods with a 1-second interval
+    var intervalId = setInterval(animatePeriods, 250);
+
+    // Move to the next text after 1 second
+    setTimeout(function () {
+        clearInterval(intervalId); // Stop the current animation
+        index++;
+
+        if (index < texts.length) {
+            displayTextsSequentially(texts, index, lightbox);
+        } else {
+            // All texts displayed, show the close button
+            showCloseButton(lightbox);
+        }
+    }, 2000);
+}
+
+function showCloseButton(lightbox) {
+    // Create and append a close button
+    var closeButton = document.createElement('span');
+    closeButton.innerHTML = '&times;'; // "X" symbol
+    closeButton.className = 'close-button';
+
+    // Add styles to the close button
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '10px'; // Adjust the distance from the top
+    closeButton.style.right = '10px'; // Adjust the distance from the right
+    closeButton.style.fontSize = '24px'; // Adjust the font size
+    closeButton.style.cursor = 'pointer'; // Add a pointer cursor
+
+    closeButton.onclick = function () {
+        closeLightbox();
+    };
+
+    lightbox.appendChild(closeButton);
 }
 
 //Lightbox trigger functions for hyperlinks within quote form

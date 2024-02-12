@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our quote calculator and get a quote in your inbox in less than 1 minute. Just add the windows, frames, and sills! Fastest window cleaning in Folsom, CA by Speedy. Get 45% off until March 15th if you book your window cleaning in advance!">
+    <meta name="keywords" content="Folsom Window Cleaning, Folsom Gutter Cleaning, window washing, window cleaning, cleaning, gutter cleaning, gutter washing, Residential Window Cleaning, Commercial Window Washing, Gutter Maintenance, Exterior Cleaning Services, Professional Window Cleaners, Home Exterior Care, Gutter Repairs, Window Cleaning Company, Gutter Inspection, Folsom Cleaning Services">
+    <meta name="author" content="Speed Squeegy Window Cleaning">
     <title>Speedy Squeegy | Window Cleaning </title>
+    <link rel="canonical" href="https://www.speedysqueegy.com/html/index.html/" />
     <link href="../styles/styles.css" rel="stylesheet">
     <!--Functional Javascript Start-->
     <script src="../js/index.js" type="text/javascript"></script>
@@ -12,7 +16,7 @@
     <!-- Calendly Widget Embed Start-->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/speedysqueegyllc/window-cleaning?hide_gdpr_banner=1', text: 'Book Now', color: '#4BD97B', textColor: 'white', branding: undefined }); }</script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/speedysqueegyllc/window-cleaning?hide_gdpr_banner=1', text: 'Book Now', color: 'red', textColor: 'white', branding: undefined }); }</script>
     <!-- Calendly Widget Embed End-->
 
     <!--Google Analytics Tag Start-->
@@ -37,30 +41,50 @@
     })();
     </script>
     <!--Email Automation Script End-->
+    <!--Input Validation Lightbox-->
+    <div id="error-lightbox" class="lightbox">
+        <span class="close-btn">X</span>
+        <div class="error-message"></div>
+    </div>
+    <!--Input Validation Lightbox-->
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <p>This</p>
+        </div>
+    </div>
+    
 </head>
 <body>
-        <div class="construction-banner">
-            <div class="construction-text">SITE IS UNDER CONSTRUCTION. SOME FUNCTIONALITIES MAY NOT WORK.</div>
-            <div class="quote-text">Please bear with us, as some functions are rudamentary. We're working to implement a more fluid experience.</div>
-            <div class="quote-text">You are, however, able to get a quote and schedule a cleaning from this page. Get <b>45% off</b> if you book your <b>window cleaning in advance!</b> No deposit required. <a href="#portion1" class="hl">Get your quote now!</a></div>
-        </div> 
-        <header class="site-header">
-            <div class="site-identity">
-                <a href="#header-logo"><img class="logo" id="header-logo" src="../assets/logo.png" alt="Window Cleaning Logo"></a>
-            </div>  
+    <div class="construction-banner">
+        <div class="construction-text">SITE IS UNDER CONSTRUCTION. SOME FUNCTIONALITIES MAY NOT WORK.</div>
+        <div class="quote-text">Please bear with us, as some functions are rudamentary. We're working to implement a more fluid experience.</div>
+        <div class="quote-text">You are, however, able to get a quote and schedule a cleaning from this page. Get <b>45% off</b> if you book your <b>window cleaning in advance!</b> No deposit required. <a href="#portion1" class="hl">Get your quote now!</a></div>
+    </div> 
+    <header class="site-header">
+        <div class="site-identity">
+            <a href="#header-logo"><img class="logo" id="header-logo" src="../assets/logo.png" alt="Window Cleaning Logo"></a>
+        </div>  
         <nav class="site-navigation" id="nav-container">
             <ul class="nav">
-                <li><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <li>
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                    <a class="hl" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/speedysqueegyllc/window-cleaning'});return false;">Schedule Now</a>
-                <li><a class="hl" href="#footer-number">Contact</a></li> 
-                <li><a class="hl" href="#">Gallery</a></li> 
-                <li><a class="hl" href="#">About Us</a></li> 
-                <li><a class="hl" href="#">Your Team</a></li> 
-                <li><a class="hl" href="#">Testimonials</a></li> 
+                    <a href="" class="hl" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/speedysqueegyllc/window-cleaning?hide_gdpr_banner=1'});return false;">Schedule Now</a>
+                </li>
+                <li>
+                    <a class="hl" href="#footer-number">Contact</a>
+                </li> 
+                <li>
+                    <a class="hl" href="#">Gallery</a>
+                </li> 
+                <li>
+                    <a class="hl" href="#">Testimonials</a>
+                </li> 
             </ul>
         </nav>
-        </header>    
+    </header>    
     </section>
     <section> 
         <div class="motto-container"> 
@@ -70,10 +94,10 @@
             </div>
         </div>
         <div class="get-quote-container">
-            <button class="get-quote" onclick="scrollToElement('portion1')">Start your quote</button>
+            <button class="get-quote" onclick="scrollToPortion1('portion1')">Start your quote</button>
         </div>
         <div class="estimator-elems">
-            <p id="portion1" class="break">General</p>
+        <p id="portion1" class="break">General</p>
             <div class="estimator"> 
                 <form action="NULL" method="post" id="quote-form">
                     <div id="generals">
@@ -104,9 +128,7 @@
                                             <p>Which services does your home need?</p>
                                             <label for="window-checkbox">Window Cleaning</label>
                                             <input type="checkbox" id="window-checkbox" name="windows">
-                            
-                                        <!--Add checkbox form for interior and exterior windows-->
-                
+                                            <!--Add checkbox form for interior and exterior windows-->
                                             <label for="gutter-checkbox">Gutter Cleaning</label>
                                             <input type="checkbox" id="gutter-checkbox" name="gutters">
                                         </div>  
@@ -116,16 +138,17 @@
                         <img id="service-ad" src="../assets/placeholder.png" alt="Window cleaning coupon" loading="lazy">
                     </div>
                     <div class="tooltip-container"> 
-                        <p><img class="tooltip" src="../assets/tooltip-icon.png" alt="tooltip icon" loading="lazy">All of our cleaning products are Green Seal Certified. <a class="hl" href="https://greenseal.org/about/faq/" target="blank" alt="Our Green Seal certification">Learn more</a></p>
+                        <p><img class="tooltip" src="../assets/tooltip-icon.png" alt="tooltip icon" loading="lazy">All of our cleaning products are Green Seal Certified. <a class="hl" href="https://greenseal.org/about/faq/" target="blank" alt="Our Green Seal certification">Learn more about Green Seal</a>.</p>
                     </div>
-                    <div class="break">Calculator</div>
+                    <div class="break" id="portion2">Calculator</div>
                     <div class="estimator"> 
                         <div class="quote-container" id="window-quote-container">
                             <h1>Windows, Frames, and Sills</h1>
-                            <p class="warning"><img class="tooltip" src="../assets/tooltip-icon.png" alt="tooltip icon" loading="lazy">Please tally the overall count of glass panes,
-                            not the total count of windows. A pane refers to an individual piece of glass 
-                            encased within a frame.</p>
-                            
+                            <p class="warning">
+                                <img class="tooltip" src="../assets/tooltip-icon.png" alt="tooltip icon" loading="lazy">Please tally the overall count of glass panes,
+                                not the total count of windows. A pane refers to an individual piece of glass 
+                                encased within a frame.
+                            </p>
                             <div class="flex-container">
                                 <div class="flex-item">
                                     <div class="sub-form">
@@ -215,7 +238,7 @@
                         </div>
                         <div id="page-break"></div>
                         <div class="get-quote-container">
-                            <button class="get-quote" id="calculation" type="button" onclick="getQuote()">Get Quote</button>
+                            <button class="get-quote" id="open-button" type="button" onclick="getQuote()">Get Quote</button>
                         </div>
                         <div id="total-container">
                             <p id="subtotal">Your Quote: $<span id="total">0</span></p>
@@ -237,14 +260,13 @@
 <footer>
     <div id="footer-container">
         <img src="../assets/logo-wo-badge.png" alt="text company logo" id="footer-logo" loading="lazy">
-            <img src="../assets/logo.png" alt="graphic company logo" id="footer-graphic-logo" loading="lazy">
-        
+        <img src="../assets/logo.png" alt="graphic company logo" id="footer-graphic-logo" loading="lazy">   
         <div id="footer-links-container">
             <div class="footer-links">
-                <a>info@speedysqueegy.com</a>
-                <a href="tos.html" class="hl">Terms of Service</a>
-                <a>The Speedy Way</a>
-                <a>Feedback</a>
+                <a href="mailto:info@speedysqueegy.com" class="hl">info@speedysqueegy.com</a>
+                <a href="tos.html" target="blank" class="hl">Terms of Service</a>
+                <a class="hl">The Speedy Way</a>
+                <a class="hl">Feedback</a>
             </div>
         </div>
         <div id="copy-container">
@@ -254,17 +276,3 @@
     </div>
 </footer>
 </html>
-
-<!--If (window-checkbox == checked)
-    service1 = "5-in-1 Window Cleaning Package"
-    else service1= ""
-    
-    If (gutter-checkbox == checked) 
-        service2 = "Gutter Cleaning"
-    else 
-        service2 = "None"
-    If (downspout == checked) 
-        service3 = " & Downspout Flushing"
-    else
-        service3 = ""
--->
