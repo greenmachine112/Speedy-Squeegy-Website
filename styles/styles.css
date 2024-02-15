@@ -120,6 +120,20 @@ button:active {
     width: 100%;
 }
 
+nav a { 
+    font-size: 14px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-inline: -2px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .site-header::after {
     content: "";
     display: table;
