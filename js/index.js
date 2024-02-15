@@ -78,15 +78,14 @@ function getQuote() {
         }
 
         if (runningTotal === 0) {
-            displayErrorLightbox("Oops, your quote is empty. Try again.");
+            displayErrorLightbox("Oops, your quote is empty.");
             scrollToGenerals();
             setTimeout(() => document.getElementById('large-pane').focus(), 500);
 
             loadingContainer.style.display = 'none';
             return;
         } else {
-            // If total 
-            openLightbox()
+            //openLightbox()
             sendMail(runningTotal);
         }
 
@@ -95,7 +94,7 @@ function getQuote() {
 }
 
 function displayErrorLightbox(message) {
-    var lightbox = document.getElementById('error-lightbox');
+    var lightbox = document.querySelector('.error-lightbox');
     var errorMessageElement = lightbox.querySelector('.error-message');
 
     errorMessageElement.textContent = message;
@@ -198,9 +197,29 @@ function sendMail(runningTotal) {
         .catch(err => console.log(err))
 }
 
-function openLightbox() {
-    console.log('success')
-    var lightbox = document.getElementById('lightbox');
+//Lightbox trigger functions for hyperlinks within quote form
+document.addEventListener('DOMContentLoaded', function() {
+    const openLightboxes = document.querySelectorAll('.open-lightbox');
+    const closeBtns = document.querySelectorAll('.close-btn, .close-btn2');
+
+    openLightboxes.forEach(function(openLightbox) {
+        openLightbox.addEventListener('click', function() {
+            const lightbox = this.parentElement.querySelector('.lightbox');
+            lightbox.classList.add('show');
+        });
+    });
+
+    closeBtns.forEach(function(closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            const lightbox = this.closest('.lightbox');
+            lightbox.classList.remove('show');
+        });
+    });
+});
+
+/*function openLightbox() {
+    console.log('NULL')
+    var lightbox = document.getElementById('NULL');
     lightbox.style.display = 'block';
 
     // Define the texts to be displayed
@@ -216,13 +235,8 @@ function openLightbox() {
     displayTextsSequentially(texts, 0, lightbox);
 }
 
-function closeLightbox() {
-    var lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-}
-
 function displayTextsSequentially(texts, index, lightbox) {
-    var content = document.querySelector('.lightbox-content p');
+    var content = document.querySelector('NULL');
     var currentText = texts[index];
     var periods = 0;
 
@@ -263,44 +277,9 @@ function displayTextsSequentially(texts, index, lightbox) {
             showCloseButton(lightbox);
         }
     }, 2000);
-}
+}*/
 
-function showCloseButton(lightbox) {
-    // Create and append a close button
-    var closeButton = document.createElement('span');
-    closeButton.innerHTML = '&times;'; // "X" symbol
-    closeButton.className = 'close-button';
-
-    // Add styles to the close button
-    closeButton.style.position = 'absolute';
-    closeButton.style.top = '10px'; // Adjust the distance from the top
-    closeButton.style.right = '10px'; // Adjust the distance from the right
-    closeButton.style.fontSize = '24px'; // Adjust the font size
-    closeButton.style.cursor = 'pointer'; // Add a pointer cursor
-
-    closeButton.onclick = function () {
-        closeLightbox();
-    };
-
-    lightbox.appendChild(closeButton);
-}
-
-//Lightbox trigger functions for hyperlinks within quote form
-document.addEventListener('DOMContentLoaded', function() {
-    const openLightboxes = document.querySelectorAll('.open-lightbox');
-    const closeBtns = document.querySelectorAll('.close-btn');
-
-    openLightboxes.forEach(function(openLightbox) {
-        openLightbox.addEventListener('click', function() {
-            const lightbox = this.parentElement.querySelector('.lightbox');
-            lightbox.classList.add('show');
-        });
-    });
-
-    closeBtns.forEach(function(closeBtn) {
-        closeBtn.addEventListener('click', function() {
-            const lightbox = this.closest('.lightbox');
-            lightbox.classList.remove('show');
-        });
-    });
-});
+/*function closeLightbox() {
+    var lightbox = document.getElementById('success-lightbox');
+    lightbox.style.display = 'none';
+}*/

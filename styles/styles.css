@@ -363,7 +363,7 @@ input:hover {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    color: white;
+    color: red;
     font-size: 20px;
 }
 
@@ -564,7 +564,6 @@ input:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     border: 1px solid black;
-    
 }
 
 .lightbox-content {
@@ -598,6 +597,15 @@ input:hover {
     top: 10px;
     right: 10px;
     font-size: 20px;
-    color: #fff;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn2 {
+    position: absolute;
+    top: 0x;
+    right: 10px;
+    font-size: 20px;
+    color: black;
     cursor: pointer;
 }
