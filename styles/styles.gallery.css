@@ -14,6 +14,20 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: .7em;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 10px;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    border-radius: 6px;
+ }
 .parent-container {
     display: flex;
     justify-content: center;

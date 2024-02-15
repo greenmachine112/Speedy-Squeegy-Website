@@ -17,3 +17,18 @@ html {
     font-size: 15px;
     border: 2px solid black;
 }
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 10px;
+    margin-block: .8em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    border-radius: 6px;
+ }
