@@ -358,15 +358,6 @@ input:hover {
     border: 2px solid #0E046E;
 }
 
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: red;
-    font-size: 20px;
-}
-
 .open-lightbox {
     cursor: pointer;
     text-decoration: underline;
