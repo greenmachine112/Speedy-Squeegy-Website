@@ -291,7 +291,7 @@ input:hover {
 }
 
 #service-ad {
-    width: 55%; 
+    width: 45%; 
     position: absolute; 
     top: 13px; 
     right: 10px;
@@ -299,7 +299,7 @@ input:hover {
     min-height: 95%;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px) {
     #service-ad {
       display: none;
     }
@@ -325,6 +325,16 @@ input:hover {
     border-radius: 10px;
     font: 13px;
     max-width: max-content;
+}
+
+#process {
+    margin-inline: -5px;
+    margin-block: -10px;
+    min-width: 100%;
+}
+
+#gutter-checkbox {
+    margin-bottom: -10px;
 }
 
 .assistance {
@@ -415,7 +425,7 @@ input:hover {
 }
 
 .sub-form input {
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
