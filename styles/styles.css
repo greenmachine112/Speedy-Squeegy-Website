@@ -39,6 +39,13 @@ body {
     margin-inline: 0px;
  }
 
+ #header-logo {
+    margin: 0 auto;
+    height: auto;
+    width: 350px;
+    margin-block: 15px;
+ }
+
  .ul {
     text-decoration: underline;
  }
@@ -58,7 +65,7 @@ body {
 }
 
 .construction-text {
-    font-size: 2vh;
+    font-size: 1.8vw;
     font-weight: 800;
 }
 
@@ -78,7 +85,7 @@ body {
 }
 
 .motto-header {
-    font-size: 56px;
+    font-size: 50px;
     color: white;
 }
 
@@ -328,7 +335,7 @@ input:hover {
 }
 
 #process {
-    margin-inline: -5px;
+    margin-inline: -10px;
     margin-block: -10px;
     min-width: 100%;
 }
@@ -502,6 +509,14 @@ input:hover {
     height: auto;
 }
 
+.tooltip-green {
+    background: #4BD97B;
+    max-width: max-content;
+    border-radius: 5px;
+    margin-inline: 15px;
+    padding: 3px;
+}
+
 #footer-container {
     background-color: #4BD97B;
     padding: 5px;
@@ -545,19 +560,11 @@ input:hover {
     }
 
     #footer-number {
-        width: 60%;
+        width: 50%;
         position: absolute; 
         margin: 15px;
         top: 145px;
         right: 10px;
-    }
-
-    #footer-graphic-logo {
-        width: 125px;
-        position: absolute; 
-        top: 20px;
-        right: 20px;
-        display: inline;
     }
 }
 
