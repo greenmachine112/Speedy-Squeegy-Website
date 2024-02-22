@@ -6,8 +6,18 @@
     <title>Gallery | Speedy Squeegy Window</title>
     <link rel="stylesheet" href="../styles/styles.gallery.css">
     <script rel="text/javascript" src="../js/index.gallery.js"></script>
+    <script> 
+        function redirectToPortion1() {
+            window.location.href = 'index.html#portion1';
+        }
+    </script>
 </head>
 <body>
+    <div id="cta-container"> 
+        <div class="get-quote-container">
+            <button class="get-quote" onclick="redirectToPortion1('portion1')">Start your quote</button>
+        </div>
+    </div>
     <div class="parent-container">
         <div class="container">
             <img src="../assets/gallery/sliding-door-after.JPG">

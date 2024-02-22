@@ -1,5 +1,5 @@
 function slide() {
-    console.log('success')
+    console.log('slide function called')
     let sliders = document.getElementsByClassName("slider");
   
     for (let i = 0; i < sliders.length; i++) {

@@ -1,6 +1,8 @@
-/*Company Colors
+/*
+Company Colors
 #4BD97B Green 
-#0E046E Dark Blue*/
+#0E046E Dark Blue
+*/
 
 html {
     scroll-behavior: smooth; 
@@ -166,7 +168,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
 }
-  
+
 .site-navigation li {
     margin-inline: 10px;
     background-color: orange;
