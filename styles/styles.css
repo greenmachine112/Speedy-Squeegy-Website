@@ -42,10 +42,10 @@ body {
  }
 
  #header-logo {
-    margin: 0 auto;
-    height: auto;
-    width: 350px;
-    margin-block: 15px;
+    margin-inline: 10px;
+    width: 15vw;
+    margin-block: 10px;
+    float: left;
  }
 
  .ul {
@@ -127,7 +127,6 @@ button:active {
     background-color: #4BD97B;
     width: 100%;
 }
-
 nav a { 
     font-size: 20px;
     border: 1px solid grey;
@@ -149,8 +148,8 @@ nav a:hover {
 }
   
 .site-identity {
-    float: center;
-    background-color: #4BD97B;
+    float: left;
+    background-color: none;
     max-width: max-content;
     margin: 0 auto;
     padding: 0px;
