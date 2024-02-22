@@ -81,7 +81,6 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     max-width: 90%;
-    margin-top: 30px;
 }
 
 .motto-header {
@@ -128,7 +127,7 @@ button:active {
 }
 
 nav a { 
-    font-size: 14px;
+    font-size: 20px;
     border: 1px solid grey;
     background-color: lightgrey;
     border-radius: 5px;
@@ -152,25 +151,25 @@ nav a:hover {
     background-color: #4BD97B;
     max-width: max-content;
     margin: 0 auto;
+    padding: 0px;
 }
 
 .site-navigation {
-    background-color: #4BD97B;
+    background-color: white;
     margin-top: 0 auto;
 }
 
 .site-navigation ul, li {
-    margin-top: 0px; 
+    margin-inline: 5px;
     padding: 0;
-    background-color: #4BD97B;
+    background-color: white;
     display: flex;
     justify-content: center;
 }
   
 .site-navigation li {
-    margin-right: 10px;
-    margin-bottom: -5px;
-    background-color: #4BD97B;
+    margin-inline: 10px;
+    background-color: orange;
 }
 
 .form-desc {

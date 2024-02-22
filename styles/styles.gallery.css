@@ -37,6 +37,7 @@ body {
     max-width: calc(100% - 70px); 
     text-align: center;
     background: lightgrey;
+    padding: 0px;
     border: 1px solid black;
     border-radius: 3px;
     box-sizing: border-box;
@@ -48,7 +49,7 @@ body {
     margin: 5px;
     position: relative;
     overflow: hidden;
-    border: 1px solid black;
+    border:1px solid black;
     border-radius: 3px;
     box-sizing: border-box;
 }
