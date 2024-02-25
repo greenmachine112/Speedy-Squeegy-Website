@@ -100,14 +100,20 @@ body {
     justify-content: left;
 }
 
+#finalize-container {
+    display: flex; 
+    justify-content: center;
+    margin-inline: 0px;
+}
+
 .get-quote-container button {
     border: none;
     border-radius: 10px;
     box-shadow: 0 3px #999;
     background-color:#4BD97B;
     border: 1px solid #0E046E;
-    width: 58%;
-    margin-left: 15px;
+    width: 60%;
+    margin-left: 10px;
     font-weight: 600;
     padding: 5px;
     font-size: 20px;
@@ -142,7 +148,7 @@ body {
 }
 
 #open-button {
-    width: 95%;
+    width: max-content;
 }
 
 .site-header { 
@@ -465,16 +471,14 @@ input:hover {
 
 #subtotal {
     font-size: 15px;
-    margin-inline: auto;
     padding: 8px;
     border-radius: 5px;
 }
 
-
 #total-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative
 }
 
 #total {
