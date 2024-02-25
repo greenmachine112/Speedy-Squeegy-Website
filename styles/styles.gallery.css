@@ -111,7 +111,7 @@ img {
     -webkit-appearance: none;
     height: 60px;
     width: 60px;
-    background: url("../assets/squeegee.png");
+    background: url("../assets/form-images/quote/squeegee.png");
     transform: rotate(45deg);
     background-size: contain;
     cursor: pointer;
