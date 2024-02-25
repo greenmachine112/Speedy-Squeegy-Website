@@ -637,8 +637,8 @@ input:hover {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-top: 10px;
 }
 
 #mobile-banner-container {
@@ -678,7 +678,7 @@ input:hover {
     margin: 0 auto;
     margin-right: 16px;
     margin-top: -5px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 600;
     border: none;
