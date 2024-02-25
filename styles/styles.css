@@ -118,6 +118,7 @@ body {
     padding: 5px;
     font-size: 20px;
     color: #0E046E;
+    cursor: pointer;
 }
 
 .get-quote-container button:active {
