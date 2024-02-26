@@ -351,12 +351,6 @@ input:hover {
     margin-top: -5px;
 }
 
-#service-ad-container {
-    max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
 #service-ad {
     width: 45%; 
     position: absolute; 
@@ -369,6 +363,10 @@ input:hover {
 @media only screen and (max-width: 760px) {
     #service-ad {
       display: none;
+    }
+
+    #process-ad {
+        display: none;
     }
 
     #generals {
@@ -807,6 +805,7 @@ input:hover {
     justify-content: center;
     padding: 5px;
     border-radius: 5px;
+    position: relative;
 }
 
 .package-flex-container img {
@@ -820,7 +819,16 @@ input:hover {
     flex: 1 1 0px; 
     min-width: 250px; 
     max-width: 60%;
-    border: 1px solid #0E046E;
     border-radius: 5px;
     text-align: center;
+}
+
+#process-ad {
+    width: 35%;
+    border-radius: 0;
+    position: absolute;
+    margin-block: 5px; 
+    top: 15px; 
+    right: 15px;
+    height: 540px;
 }
