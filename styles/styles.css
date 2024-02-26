@@ -152,8 +152,8 @@ li {
     box-shadow: 0 3px #999;
     background-color:#4BD97B;
     border: 1px solid #0E046E;
-    width: 60%;
-    margin-left: 10px;
+    width: clamp(220px, 34vw, 400px);
+    margin-left: 15px;
     font-weight: 600;
     padding: 5px;
     font-size: 20px;
@@ -788,6 +788,8 @@ input:hover {
     border-radius: 10px;
     padding: 5px;
     margin-inline: 5px;
+    border: 2px solid red;
+    margin-bottom: 10px;
 }
 
 .package-container h2 {
@@ -806,29 +808,43 @@ input:hover {
     padding: 5px;
     border-radius: 5px;
     position: relative;
+    border: 2px solid orange;
 }
 
-.package-flex-container img {
+.package-flex-item img {
     background: #4BD97B;
     border-radius: 50px;
     width: clamp(70px, 10vw, 100px);
+    box-shadow: 0 0 8px 0 black;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid purple;
 }
 
 .package-flex-item {
     background: white;
     flex: 1 1 0px; 
     min-width: 250px; 
-    max-width: 60%;
+    max-width: 50%;
     border-radius: 5px;
-    text-align: center;
+    border: 2px solid pink;
+}
+
+.package-flex-item p {
+    max-width: 40%;
+    margin-left: 120px;
+    margin-top: -60px;
+    border: 2px solid blue;
 }
 
 #process-ad {
-    width: 35%;
+    width: 65%;
     border-radius: 0;
     position: absolute;
     margin-block: 5px; 
-    top: 15px; 
+    top: 10px; 
     right: 15px;
     height: 540px;
+    border: 2px solid cyan;
 }
