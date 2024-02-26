@@ -41,12 +41,6 @@ body {
     margin-inline: 0px;
  }
 
- #header-logo {
-    margin: 10px;
-    width: clamp(250px, 18vw, 300px);
-    float: left;
- }
-
  .ul {
     text-decoration: underline;
  }
@@ -68,6 +62,52 @@ body {
 .construction-text {
     font-size: 20px;
     font-weight: 800;
+}
+
+header {
+    background-color: #4BD97B;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 0 black;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+header * {
+    display: inline;
+}
+
+nav {
+    padding-block: 40px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-block: 40px;
+    padding-inline: 10px;
+}
+
+li {
+    font-size:  clamp(15px, 2vw, 25px);
+    margin: 5px;
+    padding: 5px;
+}
+
+#banner-number {
+    width: 50%;
 }
 
 .quote-text {
@@ -151,56 +191,49 @@ body {
 #open-button {
     width: max-content;
 }
-
-.site-header { 
-    padding:0;
-    background-color: #4BD97B;
-    width: 100%;
-}
-nav a { 
-    font-size: 16px;
-    border: 1px solid grey;
-    background-color: lightgrey;
-    border-radius: 5px;
-    padding: 5px;
-    margin-inline: -2px;
-    text-decoration: none;
+ 
+#header-logo {
+    margin: 10px;
+    width: clamp(150px, 18vw, 200px);
 }
 
-nav a:hover {
-    text-decoration: underline;
+.contact-banner {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: whitesmoke;
+    padding: 15px;
+}
+
+.icons-container {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    align-items: center;
+}
+
+#phone-container {
+    margin-left: 0;
+}
+
+.contact-banner span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.icon img {
+    width: 20px;
+    margin-top: 10px;
+}
+
+#phone-icon {
+    width: 7%;
 }
 
 .site-header::after {
     content: "";
     display: table;
     clear: both;
-}
-  
-.site-identity {
-    float: left;
-    background-color: none;
-    max-width: max-content;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.site-navigation {
-    background-color: white;
-    margin-top: 0 auto;
-}
-
-.site-navigation ul, li {
-    margin-inline: 5px;
-    padding: 0;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.site-navigation li {
-    margin-inline: 10px;
-    background-color: orange;
 }
 
 .form-desc {
@@ -348,10 +381,6 @@ input:hover {
         align-items: center;
         text-align: center;
         margin: 9px;
-    }
-
-    nav a {
-        font-size: 14px;
     }
 }
 
