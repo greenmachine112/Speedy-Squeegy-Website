@@ -788,7 +788,6 @@ input:hover {
     border-radius: 10px;
     padding: 5px;
     margin-inline: 5px;
-    border: 2px solid red;
     margin-bottom: 10px;
 }
 
@@ -808,7 +807,6 @@ input:hover {
     padding: 5px;
     border-radius: 5px;
     position: relative;
-    border: 2px solid orange;
 }
 
 .package-flex-item img {
@@ -819,7 +817,6 @@ input:hover {
     margin-left: 5px;
     margin-top: 10px;
     display: inline-block;
-    border: 2px solid purple;
 }
 
 .package-flex-item {
@@ -828,14 +825,12 @@ input:hover {
     min-width: 250px; 
     max-width: 50%;
     border-radius: 5px;
-    border: 2px solid pink;
 }
 
 .package-flex-item p {
     max-width: 40%;
     margin-left: 120px;
     margin-top: -60px;
-    border: 2px solid blue;
 }
 
 #process-ad {
@@ -843,8 +838,7 @@ input:hover {
     border-radius: 0;
     position: absolute;
     margin-block: 5px; 
-    top: 10px; 
+    top: 5px; 
     right: 15px;
-    height: 540px;
-    border: 2px solid cyan;
+    height: 520px;
 }
