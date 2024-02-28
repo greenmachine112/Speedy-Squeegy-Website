@@ -226,6 +226,12 @@ li {
     margin-top: 10px;
 }
 
+.icons-container > div.icon:last-child img:hover,
+.icons-container > div.icon:nth-last-child(2) img:hover {
+    width: 105%;
+}
+
+
 #phone-icon {
     width: 7%;
 }
