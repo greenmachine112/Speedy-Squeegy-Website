@@ -613,14 +613,6 @@ input:hover {
 }
 
 @media (max-width: 767px) {
-    footer {
-      text-align: left;
-    }
-  
-    #footer-container {
-      flex-direction: column; 
-    }
-
     #footer-number {
         width: 55%;
         position: absolute; 
@@ -768,9 +760,10 @@ input:hover {
 
 .benefits-item {
     padding: 10px;
+    border-radius: 0;
 }
 
-#benefits h2 {
+#benefits h1 {
     color: white;
     margin: 5px;
 }
@@ -857,4 +850,13 @@ input:hover {
     top: 5px; 
     right: 15px;
     height: 100%;
+}
+
+#cta {
+    background: #4BD97B;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
 }
