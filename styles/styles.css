@@ -28,22 +28,14 @@ body {
 
 ::-webkit-scrollbar-track {
     background: lightgrey;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-block: .8em;
 }
 
 ::-webkit-scrollbar-thumb {
     background: darkgrey;
-    border-radius: 6px;
- }
-
- header, footer {
-    margin-inline: 0px;
- }
-
- .ul {
-    text-decoration: underline;
- }
+    border-radius: 2px;
+}
 
 /*Global highlight color*/
 ::selection {
@@ -266,7 +258,7 @@ li {
 
 input {
     border-radius: 4px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 input:hover {
@@ -313,14 +305,13 @@ input:hover {
 }
 
 #generals {
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 10px;
-    padding-top: 5px; 
-    padding-inline: 5px; 
-    padding-bottom: 0px; 
+    padding: 5px; 
     margin-inline: 15px; 
     margin-top: 20px;
     position: relative;
+    box-shadow: 0 0 10px 0 black;
 }
 
 #your-info {
@@ -494,6 +485,7 @@ input:hover {
     margin: auto;
     margin-top: 20px;
     margin-inline: 15px;
+    box-shadow: 0 0 5px 0 black;
 }
 
 .sub-form {

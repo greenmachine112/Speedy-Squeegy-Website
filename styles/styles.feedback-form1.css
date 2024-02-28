@@ -6,19 +6,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: .8em;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-track {
     background: lightgrey;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-block: .8em;
 }
 
 ::-webkit-scrollbar-thumb {
     background: darkgrey;
-    border-radius: 6px;
- }
+    border-radius: 2px;
+}
 
 #feedback-form {
     max-width: max-content;;
