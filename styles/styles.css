@@ -234,7 +234,7 @@ li {
 #open-button {
     width: max-content;
 }
- 
+/**/
 #header-logo {
     margin: 10px;
     width: clamp(150px, 18vw, 200px);
