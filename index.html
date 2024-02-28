@@ -55,7 +55,7 @@
 <body>
     <div class="construction-banner">
         <div class="construction-text">🚧 Under Construction 🚧</div>
-        <div class="quote-text"><a href="#portion1" class="hl">Get your quote now!</a></div>
+        <div class="quote-text"><a href="#quote-target" class="hl">Get your quote now!</a></div>
     </div> 
     <div class="contact-banner">
         <div class="icon" id="phone-container"> 
@@ -128,10 +128,10 @@
             </div>
         </div> 
         <div class="get-quote-container">
-            <button onclick="scrollToPortion1('portion1')">Start your quote</button>
+            <button onclick="scrollToPortion1('quote-target')">Start your quote</button>
         </div>
         <div class="why-us-container">
-            <h1>FROM QUOTE TO CLEAN IN 48 HOURS.</h1>
+            <h1>FROM QUOTE TO CLEAN IN <span class="green-text">48 HOURS.</span></h1>
             <div class="why-us-flex-item">
                 <img src="../assets/misc/1.svg">
                 <h2>1-Minute Quotes</h2>
@@ -144,11 +144,11 @@
             </div>
             <div class="why-us-flex-item">
                 <img src="../assets/misc/3.svg">
-                <h2>Cleaning</h2>
+                <h2 id="quote-target">A Speedy Cleaning</h2>
                 <p>A fully licensed and insured technician comes to clean your home. Our meticulous 3-in-1 approach ensures every window, frame, and sill is treated with care, leaving you with crystal-clear views. </p>
             </div>
             <div>
-                <button onclick="scrollToPortion1('portion1')">Start your quote</button>
+                <button onclick="scrollToPortion1('quote-target')">Start your quote</button>
             </div>
         </div>
         <div class="estimator-elems">
@@ -318,7 +318,7 @@
             <div class="mobile-banner-content" id="text2">TRUST SPEEDY SQUEEGY.</div>
         </div>
     </div>
-    <button id="start-quote" onclick="scrollToPortion1('portion1')">Start your quote</button>
+    <button id="start-quote" onclick="scrollToPortion1('quote-target')">Start your quote</button>
 <!--Google MyMaps Embed Start-->
     <div id="my-maps-container">
         <iframe id="my-maps" src="https://www.google.com/maps/d/u/3/embed?mid=129ruAYJwC8FKovACWTrReUPi5EdtggM&ehbc=2E312F" width="100%" height="300" title="Speedy Squeegy Service Area"></iframe>
@@ -346,7 +346,7 @@
                 </div>
                 <div id="cta">
                     <span>Single family homes starting at <b>$149</b>.</span>
-                    <a href="#phone-container" class="hl">Call now</a>
+                    <a href="#quote-target" class="hl">Start your quote.</a>
                 </div>
             </div>
         </div> 

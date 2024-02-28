@@ -1,6 +1,6 @@
 // Function to scroll to the element with ID 'portion1'
 function scrollToPortion1() {
-    var element = document.getElementById('portion1');
+    var element = document.getElementById('quote-target');
     if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -216,6 +216,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+/* function slide() {
+    console.log('slide function called')
+    let sliders = document.getElementsByClassName("slider");
+  
+    for (let i = 0; i < sliders.length; i++) {
+      let slideValue = sliders[i].value;
+      let myImg = sliders[i].closest('.container').querySelector('.my-img');
+  
+      myImg.style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+      console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+    }
+} */
 
 /*function openLightbox() {
     console.log('NULL')

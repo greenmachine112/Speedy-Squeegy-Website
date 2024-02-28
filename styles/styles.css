@@ -162,7 +162,7 @@ li {
 .get-quote {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 3px #999;
+    box-shadow: 0 3px #666;
     background-color:#4BD97B;
     border: 1px solid #0E046E;
     font-weight: 600;
@@ -181,37 +181,54 @@ li {
 }
 
 .why-us-container {
-    border: 5px solid red;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    max-width: max-content;
 }
 
-.why-us-container h1{
-    border: 5px solid orange;
+.why-us-container h1 {
+    margin: auto;
+    font-size: clamp(35px, 3.5vw, 45px);
+    font-weight: 800;
+    color: white;
+    background: #0E046E;
+    padding: 20px;
+    text-align: center;
 }
 
 .why-us-flex-item {
-    border: 5px solid yellow;
-    margin: 5px;
+    border: 1px solid black;
+    margin-inline: 5px;
+    margin-block: 10px;
+    max-width: 858px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px 0 black;
 }
 
 .why-us-container button {
-    border: 5px solid green;
     margin: 5px;
 }
+
 .why-us-flex-item img {
-    width: clamp(70px,10vw,110px);
-    border: 5px solid blue;
+    width: clamp(70px,6vw,110px);
     margin: 5px;
 }
 
 .why-us-flex-item h2 {
-    border: 5px solid purple;
     margin: 5px;
+    font-size: clamp(10px,5vw, 40px);
 }
 
 .why-us-flex-item p {
-    border: 5px solid pink;
     margin: 5px;
+    padding: 5px;
 }
 
 #open-button {
@@ -345,7 +362,7 @@ input:hover {
     margin-inline: 15px; 
     margin-top: 20px;
     position: relative;
-    box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 5px 0 black;
 }
 
 #your-info {
