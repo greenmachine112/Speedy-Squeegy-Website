@@ -382,6 +382,22 @@ input:hover {
     }
 }
 
+@media only screen and (max-width: 656px) {
+    nav {
+        padding-block: 10px;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+
+    #header-links li:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    li {
+        font-size:  clamp(20px, 2vw, 25px);
+    }
+}
+
 .warning {
     background-color: rgb(232, 196, 14); 
     padding: 4px;
@@ -609,7 +625,7 @@ input:hover {
         width: 55%;
         position: absolute; 
         margin: 15px;
-        top: 270px;
+        top: 250px;
         right: 0px;
         display: flex;
     }
