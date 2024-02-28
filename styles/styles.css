@@ -180,6 +180,10 @@ li {
     transform: translateY(4px)
 }
 
+.why-us-flex-item img {
+    width: clamp(70px,10vw,110px);
+}
+
 #open-button {
     width: max-content;
 }
@@ -859,3 +863,4 @@ input:hover {
     padding: 10px;
     margin: 0;
 }
+
