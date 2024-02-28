@@ -113,17 +113,15 @@ li {
     text-align: center; 
     margin-bottom: 10px;
     padding: 20px;
-    max-width: 90%;
 }
 
 .motto-header {
-    font-size: 45px;
     color: white;
+    font-size: clamp(60px, 10vw, 90px);
 }
 
 .motto-subtext {
-    color: white; 
-    margin-top: 20px;
+    color: white;
 }
 
 .get-quote-container {
@@ -180,6 +178,22 @@ li {
     transform: translateY(4px)
 }
 
+.why-us-ad-container {
+    position: absolute;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    max-width: max-content;
+    margin: 20px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.why-us-ad {
+    width: clamp(200px, 30vw, 285px);
+}
+
 .why-us-container {
     margin-top: 20px;
     padding: 5px;
@@ -213,7 +227,16 @@ li {
 }
 
 .why-us-container button {
-    margin: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 3px #999;
+    background-color:#4BD97B;
+    border: 1px solid #0E046E;
+    padding: 5px;
+    cursor: pointer;
+    color: #0E046E;
 }
 
 .why-us-flex-item img {
@@ -444,8 +467,15 @@ input:hover {
     .icons-container > div.icon:last-child img:hover,
     .icons-container > div.icon:nth-last-child(2) img:hover {
     width: 105%;
+    }
 }
+
+@media only screen and (max-width: 1225px) {
+    .why-us-ad-container {
+        display: none;
+    }
 }
+
 
 .warning {
     background-color: rgb(232, 196, 14); 
@@ -910,4 +940,3 @@ input:hover {
     padding: 10px;
     margin: 0;
 }
-
