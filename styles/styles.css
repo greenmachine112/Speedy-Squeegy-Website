@@ -226,11 +226,6 @@ li {
     margin-top: 10px;
 }
 
-.icons-container > div.icon:last-child img:hover,
-.icons-container > div.icon:nth-last-child(2) img:hover {
-    width: 105%;
-}
-
 #phone-icon {
     width: 7%;
 }
@@ -401,6 +396,13 @@ input:hover {
     li {
         font-size:  clamp(20px, 2vw, 25px);
     }
+}
+
+@media only screen and (min-width: 656px) {
+    .icons-container > div.icon:last-child img:hover,
+    .icons-container > div.icon:nth-last-child(2) img:hover {
+    width: 105%;
+}
 }
 
 .warning {
