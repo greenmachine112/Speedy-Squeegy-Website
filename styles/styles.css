@@ -69,7 +69,7 @@ header {
     height: fit-content;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 10px 0 black, 0 0 0 0 transparent;
     z-index: 1;
 }
 
@@ -945,7 +945,7 @@ input:hover {
 }
 
 .package-flex-item p {
-    max-width: 45%;
+    max-width: 42%;
     margin-left: 120px;
     margin-top: -60px;
 }
