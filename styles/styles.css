@@ -904,10 +904,14 @@ input:hover {
     margin-bottom: 10px;
 }
 
-.package-container h2 {
-    margin-left: 5px;
-    font-size: 25px;
-    margin-bottom: 3px;
+.package-container h1 {
+    margin-right: auto;
+    font-size: clamp(35px, 3.5vw, 45px);
+    font-weight: 800;
+    color: white;
+    background: #0E046E;
+    padding: 20px;
+    width: clamp(200px,26%, 350px);
 }
 
 .package-flex-container {
@@ -941,13 +945,13 @@ input:hover {
 }
 
 .package-flex-item p {
-    max-width: 40%;
+    max-width: 45%;
     margin-left: 120px;
     margin-top: -60px;
 }
 
 #process-ad {
-    width: 60%;
+    width: 55%;
     border-radius: 0;
     position: absolute;
     margin-block: 5px; 
