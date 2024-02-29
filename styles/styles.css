@@ -303,7 +303,7 @@ li {
 .icons-container {
     display: flex;
     margin-left: auto;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -317,7 +317,7 @@ li {
 }
 
 .icon img {
-    width: 20px;
+    width: 30px;
     margin-top: 10px;
 }
 
@@ -489,13 +489,6 @@ input:hover {
 
     li {
         font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 656px) {
-    .icons-container > div.icon:last-child img:hover,
-    .icons-container > div.icon:nth-last-child(2) img:hover {
-    width: 105%;
     }
 }
 
