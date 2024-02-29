@@ -91,7 +91,7 @@ nav a:hover {
     border-bottom: 3px solid grey;
 }
 
-a:active {
+a:not(:has(img)):active {
     border: 1px dashed black;
 }
 
