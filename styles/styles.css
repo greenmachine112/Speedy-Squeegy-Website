@@ -32,13 +32,13 @@ button {
 
 ::-webkit-scrollbar-track {
     background: lightgrey;
-    border-radius: 2px;
-    margin-block: .8em;
+    border-radius: 0px;
+    margin-block: .5em;
 }
 
 ::-webkit-scrollbar-thumb {
     background: darkgrey;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 /*Global highlight color*/
