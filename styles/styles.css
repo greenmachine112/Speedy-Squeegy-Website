@@ -87,7 +87,12 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    padding-bottom: 15px;
+    border-bottom: 3px solid grey;
+}
+
+a:active {
+    border: 1px dashed black;
 }
 
 ul {
