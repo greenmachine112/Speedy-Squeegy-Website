@@ -79,7 +79,7 @@ header * {
 
 nav {
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 nav a {
@@ -483,7 +483,7 @@ input:hover {
     }
 
     li {
-        font-size:  clamp(20px, 2vw, 25px);
+        font-size: 15px;
     }
 }
 
