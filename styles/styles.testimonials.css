@@ -85,3 +85,10 @@ body {
     left: 60px;
     width: 100px;
 }
+
+#testimonials-quote {
+    margin: 0 auto;
+    max-width: max-content;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
