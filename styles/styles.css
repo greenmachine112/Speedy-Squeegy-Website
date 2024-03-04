@@ -296,8 +296,9 @@ li {
     display: flex;
     justify-content: right;
     align-items: center;
-    background: whitesmoke;
+    background: white;
     padding: 15px;
+    margin-top: -13.5px;
 }
 
 .icons-container {
@@ -419,6 +420,7 @@ input:hover {
 
 #your-info {
     margin-left: 22px;
+    font-weight: 600;
 }
 
 #basics {
@@ -589,6 +591,10 @@ input:hover {
     margin-top: 20px;
     margin-inline: 15px;
     box-shadow: 0 0 5px 0 black;
+}
+
+.quote-container h1 {
+    font-weight: 600;
 }
 
 .sub-form {
