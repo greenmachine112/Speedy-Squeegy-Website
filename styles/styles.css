@@ -100,6 +100,10 @@ ul {
     padding-inline: 10px;
 }
 
+ul li:nth-child(2) {
+    display: none;
+}
+
 li {
     font-size:  clamp(15px, 2vw, 25px);
     margin: 5px;
@@ -512,12 +516,6 @@ input:hover {
     }
 }
 
-@media only screen and (min-width: 656px) {
-    ul li:nth-child(2) {
-        display: none;
-      }
-}
-
 .warning {
     background-color: rgb(232, 196, 14); 
     padding: 4px;
@@ -745,6 +743,10 @@ input:hover {
         top: 250px;
         right: 0px;
         display: flex;
+    }
+
+    ul li:nth-child(2) {
+        display: inline;
     }
 }
 
