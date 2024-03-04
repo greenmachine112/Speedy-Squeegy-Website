@@ -512,6 +512,11 @@ input:hover {
     }
 }
 
+@media only screen and (min-width: 656px) {
+    ul li:nth-child(2) {
+        display: none;
+      }
+}
 
 .warning {
     background-color: rgb(232, 196, 14); 
