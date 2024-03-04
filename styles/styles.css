@@ -325,6 +325,19 @@ li {
     width: 7%;
 }
 
+.discount-banner {
+    background: black;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.discount-banner p {
+    margin: 5px;
+    font-size: 20px;
+}
+
 .site-header::after {
     content: "";
     display: table;
