@@ -339,7 +339,7 @@ li {
 
 .discount-banner p {
     margin: 5px;
-    font-size: 1vw;
+    font-size: clamp(12px,2vw,18px);
 }
 
 .site-header::after {
