@@ -62,3 +62,51 @@ input {
     cursor: pointer;
     font-size: 16px;
 }
+
+.side-cta {
+    margin-left: 50%;
+}
+
+.green {
+    color: #4caf50;
+}
+
+.date {
+    color: grey;
+}
+
+.blog-container {
+    max-width: 30%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+}
+
+@media (max-width: 999px) {
+    .blog-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1090px) {
+    .blog-container .blog-item:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 1530px) {
+    .blog-container .blog-item:nth-child(5) {
+        display: none;
+    }
+}
+
+.blog-container h2 {
+    margin: 0 auto;
+}
+
+.blog-item {
+    margin-bottom: 5px;
+}
