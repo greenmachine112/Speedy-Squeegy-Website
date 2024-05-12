@@ -342,6 +342,10 @@ li {
     font-size: clamp(12px,2vw,18px);
 }
 
+#summer-special-a {
+    color: white;
+}
+
 .site-header::after {
     content: "";
     display: table;

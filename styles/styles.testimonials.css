@@ -54,8 +54,8 @@ body {
 }
 
 .profile-flex-item img{
-    width: 20%;
-    border-radius: 100px;
+    width: 15%;
+    border-radius: 10px;
 }
 
 .profile-flex-item h4{
@@ -81,8 +81,8 @@ body {
 
 #star-rating {
     position: absolute;
-    top: 7px;
-    left: 60px;
+    top: 10px;
+    left: 45px;
     width: 100px;
 }
 
