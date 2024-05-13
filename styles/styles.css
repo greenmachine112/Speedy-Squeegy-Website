@@ -397,10 +397,17 @@ input:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    justify-content: center;
+    justify-content: left;
     padding: 5px;
     border-radius: 5px;
-    background-color: lightgrey;
+    background-color: #FAF9F6;
+}
+
+.basics-flex-container {
+    flex-direction: column;
+    min-width: min-content;
+    max-width: 25%;
+    margin-left: 15px;
 }
 
 .break {
@@ -422,58 +429,32 @@ input:hover {
     flex: 1 1 0px; 
     min-width: 250px; 
     max-width: 350px;
-    background-color: WHITE;
+    background-color: white;
     border: 1px solid #0E046E;
     border-radius: 5px;
     text-align: center;
 }
 
 #generals {
-    background-color: lightgrey;
-    border-radius: 10px;
-    padding: 5px; 
-    margin-inline: 15px; 
-    margin-top: 20px;
-    position: relative;
-    box-shadow: 0 0 5px 0 black;
+
 }
 
 #your-info {
-    margin-left: 22px;
-    font-weight: 600;
+    margin-left: 55px;
 }
 
 #basics {
-    max-width: max-content;
-    margin-inline: 15px;
-}
-
-#basics-flex-item {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 3px;
-}
-
-#basics-flex-container {
-    margin-top: -10px;
+    
 }
 
 #services {
-    max-width: max-content;
-    margin-left: 6px;
 }
 
 #services-flex-container {
-    margin-top: -5px;
 }
 
 #service-ad {
-    width: 45%; 
-    position: absolute; 
-    top: 13px; 
-    right: 10px;
-    max-height: 95%;
-    min-height: 95%;
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -603,13 +584,14 @@ input:hover {
 }
 
 .quote-container {
-    background-color: lightgrey;
+    background-color: #FAF9F6;
     border-radius: 10px;
     padding: 5px;
     margin: auto;
     margin-top: 20px;
     margin-inline: 15px;
-    box-shadow: 0 0 5px 0 black;
+    border: 1px solid black;
+    box-shadow: 0 0 4px black;
 }
 
 .quote-container h1 {

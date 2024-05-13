@@ -176,9 +176,9 @@
                 <form action="NULL" method="post" id="quote-form">
                     <div id="generals">
                         <div id="basics">
-                            <h1 id="your-info">Your Information</h1>
-                                <div class="flex-container" id="basics-flex-container">
-                                    <div class="flex-item" id="basics-flex-item">
+                            <div class="flex-container basics-flex-container" >
+                                <h1 id="your-info">Your Information</h1>
+                                    <div class="flex-item">
                                         <div class="sub-form">
                                             <label for="to_name">Name:</label>
                                             <input type="text" id="to_name" name="to_name" required>
@@ -196,21 +196,19 @@
                                 </div>
                             </div>
                             <div id="services">
-                                <div class="flex-container" id="services-flex-container">
-                                    <div class="flex-item" id="services-flex-item">
+                                <div class="flex-container basics-flex-container">
+                                    <div class="flex-item">
                                         <div class="sub-form">
-                                            <p class="warning" id="process"><img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">Our process involves a cleaning of all exterior windows, frames, and sills.</p>
+                                            <!--<p class="warning" id="process"><img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">Our process involves a cleaning of all exterior windows, frames, and sills.</p>-->
                                             <p>Which services does your home need?</p>
                                             <label for="window-checkbox">Window Cleaning</label>
                                             <input type="checkbox" id="window-checkbox" name="windows">
-                                            <!--Add checkbox form for interior and exterior windows-->
                                             <label for="gutter-checkbox">Gutter Cleaning</label>
                                             <input type="checkbox" id="gutter-checkbox" name="gutters">
-                                        </div>  
-                                    </div>                   
-                                </div>
+                                    </div>  
+                                </div>                   
                             </div>
-                        <img id="service-ad" src="../assets/misc/placeholder.png" alt="placeholder" loading="lazy">
+                        </div>
                     </div>
                     <div class="tooltip-container"> 
                         <p class="tooltip-green"><img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">All of our cleaning products are Green Seal Certified. <a class="hl" href="https://greenseal.org/about/faq/" target="blank" alt="Our Green Seal certification">Learn more about Green Seal</a>.</p>
