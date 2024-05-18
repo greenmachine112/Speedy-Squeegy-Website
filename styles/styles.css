@@ -465,12 +465,18 @@ input:hover {
 #serv-radio {
     display: flex; 
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
 }
 
 #gutter-checkbox {
     margin-top: -15px;
 }
+
+#window-checkbox {
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
 @media only screen and (max-width: 760px) {
     #service-ad {
       display: none;
