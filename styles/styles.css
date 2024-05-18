@@ -397,7 +397,7 @@ input:hover {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 50px;
     justify-content: left;
     padding: 5px;
     border-radius: 5px;
@@ -429,8 +429,6 @@ input:hover {
 
 .flex-item {
     flex: 1 1 0px; 
-    min-width: 250px; 
-    max-width: 350px;
     background-color: white;
     border: 1px solid #0E046E;
     border-radius: 5px;
@@ -443,6 +441,7 @@ input:hover {
 
 #your-info {
     margin-left: 55px;
+    margin-bottom: -40px;
 }
 
 #basics {
@@ -470,7 +469,7 @@ input:hover {
 }
 
 #gutter-checkbox {
-    margin-top: -13px;
+    margin-top: -15px;
 }
 @media only screen and (max-width: 760px) {
     #service-ad {
@@ -607,6 +606,7 @@ input:hover {
     margin-inline: 15px;
     border: 1px solid black;
     box-shadow: 0 0 4px black;
+    max-width: max-content;
 }
 
 .quote-container h1 {
@@ -615,7 +615,7 @@ input:hover {
 
 .sub-form {
     background-color: white;
-    padding: 10px;
+    padding: 3px;
     border-radius: 5px;
     margin: 8px;
     margin-top: 10px;
@@ -629,7 +629,6 @@ input:hover {
     margin-bottom: 10px;
     box-sizing: border-box;
 }
-
 
 #garage-tooltip {
     margin-top: 5px;
