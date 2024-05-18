@@ -288,6 +288,7 @@ li {
 
 #open-button {
     width: max-content;
+    margin: 0 auto;
 }
 /**/
 #header-logo {
@@ -408,6 +409,7 @@ input:hover {
     min-width: min-content;
     max-width: 25%;
     margin-left: 15px;
+    background: white;
 }
 
 .break {
@@ -457,6 +459,19 @@ input:hover {
 
 }
 
+#services p {
+    margin-top: -10px;
+}
+
+#serv-radio {
+    display: flex; 
+    flex-direction: row;
+    gap: 10px;
+}
+
+#gutter-checkbox {
+    margin-top: -13px;
+}
 @media only screen and (max-width: 760px) {
     #service-ad {
       display: none;
@@ -610,7 +625,7 @@ input:hover {
 }
 
 .sub-form input {
-    padding: 0px;
+    padding: 3px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }

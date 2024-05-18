@@ -178,7 +178,7 @@
                         <div id="basics">
                             <div class="flex-container basics-flex-container" >
                                 <h1 id="your-info">Your Information</h1>
-                                    <div class="flex-item">
+                                <div class="flex-item">
                                         <div class="sub-form">
                                             <label for="to_name">Name:</label>
                                             <input type="text" id="to_name" name="to_name" required>
@@ -201,10 +201,13 @@
                                         <div class="sub-form">
                                             <!--<p class="warning" id="process"><img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">Our process involves a cleaning of all exterior windows, frames, and sills.</p>-->
                                             <p>Which services does your home need?</p>
-                                            <label for="window-checkbox">Window Cleaning</label>
-                                            <input type="checkbox" id="window-checkbox" name="windows">
-                                            <label for="gutter-checkbox">Gutter Cleaning</label>
-                                            <input type="checkbox" id="gutter-checkbox" name="gutters">
+                                            <div id="serv-radio">
+                                                <label for="window-checkbox">Window Cleaning</label>
+                                                <input type="checkbox" id="window-checkbox" name="windows">
+                                                <label for="gutter-checkbox">Gutter Cleaning</label>
+                                                <input type="checkbox" id="gutter-checkbox" name="gutters">
+                                            </div>
+                                        </div>
                                     </div>  
                                 </div>                   
                             </div>
@@ -227,7 +230,7 @@
                                     <div class="sub-form">
                                         <img class="form-desc" src="../assets/form-images/quote/large-pane.png" alt="large window pane" loading="lazy">
                                         <label for="large_pane">Large Panes:</label>
-                                        <input type="number" id="large_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <input type="number" id="large_pane" class="quantity-field" step="1" oninput="validateInput(this)">
                                         <div class="assistance">
                                             <img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">Glass panes over 4ft in height. i.e. Sliding glass doors.
                                             <span class="hl unsure-amount open-lightbox">Not sure how many?</span>
@@ -245,7 +248,7 @@
                                     <div class="sub-form">
                                         <img class="form-desc" src="../assets/form-images/quote/small-pane.png" alt="small window pane" loading="lazy">
                                         <label for="small_pane">Small Panes:</label>
-                                        <input type="number" id="small_pane" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <input type="number" id="small_pane" class="quantity-field" step="1" oninput="validateInput(this)">
                                         <div class="assistance">
                                             <img class="tooltip" src="../assets/misc/tooltip-icon.png" alt="tooltip icon" loading="lazy">i.e. Standard windows, french panes.
                                             <span class="hl unsure-amount open-lightbox">Not sure how many?</span>
@@ -263,7 +266,7 @@
                                     <div class="sub-form">
                                         <img class="form-desc" src="../assets/form-images/quote/frame.png" alt="window frame" loading="lazy">
                                         <label for="frames">&nbsp;&nbsp;&nbsp;Frames:&nbsp;&nbsp;&nbsp;</label>
-                                        <input type="number" id="frames" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <input type="number" id="frames" class="quantity-field" step="1" oninput="validateInput(this)">
                                         <div class="lightbox frames-lightbox">
                                             <div class="lightbox-content">
                                                 <span class="close-btn2">&times;</span>
@@ -280,7 +283,7 @@
                                             <img class="form-desc" id="sill-img" src="../assets/form-images/quote/sill.png" alt="window sill" loading="lazy">
                                         </span> 
                                         <label for="sills">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sills:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                        <input type="number" id="sills" class="quantity-field" step="1" value="0" oninput="validateInput(this)">
+                                        <input type="number" id="sills" class="quantity-field" step="1" oninput="validateInput(this)">
                                         <div class="lightbox sills-lightbox">
                                             <div class="lightbox-content">
                                                 <span class="close-btn2">&times;</span>
@@ -302,7 +305,7 @@
                                     <div class="sub-form">
                                         <img class="form-desc" src="../assets/form-images/quote/gutter.png" alt="gutters" loading="lazy">
                                         <label for="guttering">Total Feet of Guttering</label>
-                                        <input type="number" id="guttering" class="quantity-field" step="1" value="0" oninput=" validateInput(this)">
+                                        <input type="number" id="guttering" class="quantity-field" step="1" oninput=" validateInput(this)">
                                         <label for="downspout">Would you like us to flush your downspout?</label>
                                         <input type="checkbox" id="downspout" onclick="calculateTotal()">                            
                                     </div>  
